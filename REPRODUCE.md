@@ -23,8 +23,8 @@ All scripts are CPU-only unless noted; the full audit is minutes. Point scripts 
 |---|---|---|
 | Neutrals-included / τ=0 ex-ante M&A | `experiments/E1_neutrals.py` | τ=0 MCC +0.078 (p=0.019); signal survives ex-ante inclusion |
 | Leakage-mitigation demo (purged/embargo CV) | `experiments/E2_mitigation.py` | naive-CV inflates ~2.2×; blocked+embargo & forward-chain recover chronological; M&A locked-test invariant |
-| Val-calibrated deployable backtest | `experiments/E3_valcal_backtest.py` | val-threshold≈test-threshold (|Δ|<0.001); deployable top-quartile Sharpe +2.33@10bps |
-| Firm-disjoint (entity-holdout) M&A | `experiments/E4_firm_disjoint.py` | unseen-firm MCC +0.098; grouped firm-holdout CV +0.094 |
+| Val-calibrated backtest (upper bound) | `experiments/E3_valcal_backtest.py` | val-threshold≈test-threshold (|Δ|<0.001); top-quartile Sharpe +2.33@10bps, but all-trade −0.60@10bps (break-even ≈5bps) — still an upper bound (slippage/impact unmodelled) |
+| Firm-disjoint (entity-holdout) M&A | `experiments/E4_firm_disjoint.py` | temporal + firm-disjoint unseen-firm MCC +0.098 (n=551) — the clean, time-purged estimate |
 | Dedup robustness (cross-boundary) | `artifact_bundle/dedup_robustness.py` | ~0.1% test near-dup in train; MCC 0.138→0.139 after removal |
 
 ## Aggregate verification (no text needed)
