@@ -1,0 +1,11 @@
+{
+  "n_train_ma": 731,
+  "n_test_ma": 786,
+  "test_exact_dup_in_train": 1,
+  "test_near_dup_in_train_jacc>=0.85": 1,
+  "test_near_dup_rate": 0.0013,
+  "locked_test_mcc_full": 0.1377825208709459,
+  "locked_test_mcc_after_dropping_train_dups": 0.13925053729898615,
+  "n_test_after_dedup": 785,
+  "interpretation": "Across the 2-month temporal gap, few/no test M&A titles near-duplicate a train title; the locked-test MCC is essentially unchanged after removing any that do -> the signal is not carried by cross-boundary near-duplicates (temporal splitting already controls this)."
+}

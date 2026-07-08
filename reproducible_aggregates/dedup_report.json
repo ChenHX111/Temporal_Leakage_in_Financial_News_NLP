@@ -1,0 +1,8 @@
+{
+  "n_articles": 49799,
+  "exact_title_duplicates": 12474,
+  "minhash_near_dup_candidate_articles": 20013,
+  "near_dup_candidate_rate": 0.4019,
+  "method": "MinHash 32-perm / 4-band on 5-char title shingles; band-collision = near-dup candidate (Jaccard~>=0.8)",
+  "note": "labels are next-day return (t+1); (ticker,date) pairs inherit the split of the earliest article; release includes per-article hashed keys for external near-dup audit without text."
+}

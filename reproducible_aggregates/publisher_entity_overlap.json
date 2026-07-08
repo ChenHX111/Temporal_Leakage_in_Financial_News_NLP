@@ -1,0 +1,14 @@
+{
+  "publisher": {
+    "train_test_jaccard": 0.142,
+    "train_test_shared": 23,
+    "test_only": 127,
+    "test_rows_with_train_seen_value_frac": 0.6221
+  },
+  "entity_ticker": {
+    "train_test_jaccard": 0.4093,
+    "train_test_shared": 1566,
+    "test_only": 1717,
+    "test_rows_with_train_seen_value_frac": 0.6646
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "total_updown": 49799,
+  "splits": {
+    "train": {
+      "n": 21654,
+      "date_min": "2020-05-14",
+      "date_max": "2025-03-31",
+      "up_rate": 0.5495,
+      "n_events": 160,
+      "n_publishers": 35,
+      "n_tickers": 2109
+    },
+    "val": {
+      "n": 10866,
+      "date_min": "2025-04-01",
+      "date_max": "2025-05-30",
+      "up_rate": 0.5684,
+      "n_events": 77,
+      "n_publishers": 44,
+      "n_tickers": 1897
+    },
+    "test": {
+      "n": 17279,
+      "date_min": "2025-06-02",
+      "date_max": "2025-08-15",
+      "up_rate": 0.5653,
+      "n_events": 76,
+      "n_publishers": 150,
+      "n_tickers": 3283
+    }
+  },
+  "mergers_acquisitions": {
+    "train": 731,
+    "val": 369,
+    "test": 786
+  }
+}
