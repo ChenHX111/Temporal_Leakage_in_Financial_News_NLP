@@ -36,7 +36,7 @@ from sklearn.metrics import matthews_corrcoef, balanced_accuracy_score
 
 torch.set_num_threads(max(1, os.cpu_count() // 2))
 
-ROOT = Path(r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package")
+ROOT = Path(r".")
 DATA = ROOT / "data" / "classifier_training_v2.parquet"
 GLOVE_PATH = ROOT / "data" / "external" / "glove.6B.300d.txt"
 OUT = ROOT / "results" / "validation" / "bilstm_baseline.json"

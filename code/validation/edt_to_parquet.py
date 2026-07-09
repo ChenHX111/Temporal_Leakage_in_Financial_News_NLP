@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package")
+ROOT = Path(r".")
 SRC = ROOT / "data" / "external" / "evaluate_news.json"
 OUT = ROOT / "data" / "external" / "edt_evaluate_slim.parquet"
 

@@ -18,7 +18,7 @@ from sklearn.metrics import (
     matthews_corrcoef, roc_auc_score, classification_report
 )
 
-DATA_PATH = r'C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package\data\classifier_training_v2.parquet'
+DATA_PATH = r'.\data\classifier_training_v2.parquet'
 
 # ============================================================
 # Load and split
@@ -155,7 +155,7 @@ for name, m in sorted(results.items(), key=lambda x: x[1]['mcc'], reverse=True):
     print(f'{name:<20} {m["accuracy"]:>7.4f} {m["balanced_accuracy"]:>7.4f} {m["mcc"]:>7.4f} {m["roc_auc"]:>7.4f} {m["f1_macro"]:>7.4f} {m["time_s"]:>6.1f}s')
 
 # Save results
-results_path = r'C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package\results\baseline\stronger_baselines_temporal.json'
+results_path = r'.\results\baseline\stronger_baselines_temporal.json'
 os.makedirs(os.path.dirname(results_path), exist_ok=True)
 with open(results_path, 'w') as f:
     json.dump(results, f, indent=2)

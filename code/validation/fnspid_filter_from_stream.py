@@ -4,7 +4,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='repla
 import pandas as pd
 from pathlib import Path
 
-BASE = Path(r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package\data\external")
+BASE = Path(r".\data\external")
 
 MA_REGEX = re.compile(
     r"\b(?:merger|merging|merge|acquisition|acquir(?:e|es|ed|ing)|"

@@ -10,7 +10,7 @@ from sklearn.metrics import balanced_accuracy_score, matthews_corrcoef
 import json, os
 
 # Load data
-df = pd.read_parquet(r'C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package\data\classifier_training_v2.parquet')
+df = pd.read_parquet(r'.\data\classifier_training_v2.parquet')
 df['published_date'] = pd.to_datetime(df['published_date'])
 df = df[df['actual_side'].str.lower().isin(['up','down'])].copy()
 df['label'] = (df['actual_side'].str.lower()=='up').astype(int)
@@ -103,7 +103,7 @@ ba = balanced_accuracy_score(val['label'], p)
 print(f"TF-IDF + exchange_id: MCC={mcc:.4f} BalAcc={ba:.4f}")
 
 # Save results
-out_path = r'C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package\results\baseline\subgroup_analysis.json'
+out_path = r'.\results\baseline\subgroup_analysis.json'
 os.makedirs(os.path.dirname(out_path), exist_ok=True)
 with open(out_path, 'w') as f:
     json.dump(results, f, indent=2)

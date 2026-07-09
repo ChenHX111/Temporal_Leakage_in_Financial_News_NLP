@@ -18,8 +18,8 @@ from sklearn.metrics import (
     matthews_corrcoef, roc_auc_score
 )
 
-DATA_PATH = r'C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package\data\classifier_training_v2.parquet'
-CACHE_DIR = r'C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package\data\embeddings_cache'
+DATA_PATH = r'.\data\classifier_training_v2.parquet'
+CACHE_DIR = r'.\data\embeddings_cache'
 os.makedirs(CACHE_DIR, exist_ok=True)
 
 # ============================================================
@@ -165,7 +165,7 @@ for name, m in sorted(results.items(), key=lambda x: x[1]['mcc'], reverse=True):
     print(f'{name:<35} {m["accuracy"]:>7.4f} {m["balanced_accuracy"]:>7.4f} {m["mcc"]:>7.4f} {m["roc_auc"]:>7.4f} {m["n_features"]:>6}')
 
 # Save
-results_path = r'C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package\results\baseline\embedding_baselines_temporal.json'
+results_path = r'.\results\baseline\embedding_baselines_temporal.json'
 with open(results_path, 'w') as f:
     json.dump(results, f, indent=2)
 print(f'\nSaved to: {results_path}')

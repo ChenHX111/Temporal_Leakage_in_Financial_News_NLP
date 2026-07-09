@@ -53,10 +53,10 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import matthews_corrcoef
 from scipy import stats
 
-sys.path.insert(0, r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package\code\validation")
+sys.path.insert(0, r".\code\validation")
 from ner_role_attribution_v2 import classify_role_v2
 
-BASE = r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package"
+BASE = r"."
 DATA = os.path.join(BASE, "data", "classifier_training_v2.parquet")
 OUT = os.path.join(BASE, "results", "validation", "mcnemar_acquirer_target.json")
 

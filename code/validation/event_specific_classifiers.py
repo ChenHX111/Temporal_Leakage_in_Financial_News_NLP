@@ -21,7 +21,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import matthews_corrcoef, balanced_accuracy_score, accuracy_score
 from scipy.sparse import hstack, csr_matrix
 
-BASE_DIR = r'C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package'
+BASE_DIR = r'.'
 DATA_PATH = os.path.join(BASE_DIR, 'data', 'classifier_training_v2.parquet')
 RESULTS_DIR = os.path.join(BASE_DIR, 'results', 'validation')
 

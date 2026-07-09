@@ -18,13 +18,13 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 
-BASE = Path(r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package")
+BASE = Path(r".")
 SRC_FILTERED = BASE / "data" / "external" / "fnspid_ma_filtered_fromstream.parquet"
 PRICE_ZIP = BASE / "data" / "external" / "hf_cache" / \
     "datasets--Zihan1004--FNSPID" / "snapshots" / \
     "bf9189c41527198897d1af3e17b1a0095279fc45" / "Stock_price" / "full_history.zip"
 
-V8_DATA = Path(r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\paper\gpu_package_v8\data")
+V8_DATA = Path(r".\Documents\Fin_NLP\paper\gpu_package_v8\data")
 V8_DATA.mkdir(parents=True, exist_ok=True)
 
 

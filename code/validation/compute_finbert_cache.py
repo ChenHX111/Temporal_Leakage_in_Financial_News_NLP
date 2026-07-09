@@ -9,7 +9,7 @@ from transformers import AutoTokenizer, AutoModel
 from tqdm import tqdm
 import time
 
-ROOT = Path(r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package")
+ROOT = Path(r".")
 DATA = ROOT / "data" / "classifier_training_v2.parquet"
 OUT = ROOT / "data" / "embeddings_cache" / "finbert_title.npy"
 OUT.parent.mkdir(parents=True, exist_ok=True)

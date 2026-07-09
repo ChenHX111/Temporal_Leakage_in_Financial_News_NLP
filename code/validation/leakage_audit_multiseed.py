@@ -27,7 +27,7 @@ from sklearn.metrics import matthews_corrcoef, balanced_accuracy_score
 
 warnings.filterwarnings("ignore")
 
-ROOT = Path(r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package")
+ROOT = Path(r".")
 DATA = ROOT / "data" / "classifier_training_v2.parquet"
 EMB_CACHE = ROOT / "data" / "embeddings_cache" / "minilm_title.npy"
 FINBERT_CACHE = ROOT / "data" / "embeddings_cache" / "finbert_title.npy"

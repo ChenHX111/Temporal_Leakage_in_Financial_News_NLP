@@ -26,7 +26,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import matthews_corrcoef
 
-BASE = r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package"
+BASE = r"."
 DATA = os.path.join(BASE, "data", "classifier_training_v2.parquet")
 OUT = os.path.join(BASE, "results", "validation", "cost_aware_backtest_paperHP.json")
 

@@ -25,7 +25,7 @@ from sklearn.metrics import (matthews_corrcoef, balanced_accuracy_score,
 from sklearn.calibration import calibration_curve
 from itertools import product
 
-BASE = r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package"
+BASE = r"."
 DATA = os.path.join(BASE, "data", "classifier_training_v2.parquet")
 EDT  = os.path.join(BASE, "data", "external", "edt_evaluate_slim.parquet")
 FINBERT_CACHE = os.path.join(BASE, "data", "embeddings_cache", "finbert_title.npy")

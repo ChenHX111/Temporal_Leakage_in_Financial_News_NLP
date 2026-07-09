@@ -14,9 +14,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import matthews_corrcoef
 
-BASE = r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package"
+BASE = r"."
 DATA = os.path.join(BASE, "data", "classifier_training_v2.parquet")
-OUT = r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\EMNLP_REBUTTAL\artifact_bundle\reproducible_aggregates\dedup_robustness_MA.json"
+OUT = r".\Documents\Fin_NLP\EMNLP_REBUTTAL\artifact_bundle\reproducible_aggregates\dedup_robustness_MA.json"
 TRAIN_END, VAL_END = pd.Timestamp("2025-04-01"), pd.Timestamp("2025-06-01")
 PAPER_HP = dict(max_features=100, sublinear_tf=False, min_df=2, ngram_range=(1, 1), stop_words="english")
 

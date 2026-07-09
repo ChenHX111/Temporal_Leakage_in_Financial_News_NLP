@@ -9,7 +9,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='repla
 
 import pandas as pd
 
-BASE = r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package"
+BASE = r"."
 OUT = os.path.join(BASE, "data", "external", "fnspid_slim_full.parquet")
 
 os.makedirs(os.path.dirname(OUT), exist_ok=True)

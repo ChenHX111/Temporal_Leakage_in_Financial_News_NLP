@@ -22,7 +22,7 @@ from sklearn.metrics import (
 # ============================================================
 # 1. Load data
 # ============================================================
-DATA_PATH = r'C:\Users\a-chenhaoxue\OneDrive - Microsoft\Documents\Fin_NLP\autoresearch_package\data\classifier_training_v2.parquet'
+DATA_PATH = r'.\data\classifier_training_v2.parquet'
 df = pd.read_parquet(DATA_PATH)
 print(f'Loaded {len(df):,} rows')
 
@@ -239,7 +239,7 @@ results = {
     'split': {'train': len(train), 'val': len(val), 'test': len(test)},
     'features': {'same_day': total_features, 'next_day': X_train_nd_scaled.shape[1]},
 }
-results_path = r'C:\Users\a-chenhaoxue\OneDrive - Microsoft\Documents\Fin_NLP\autoresearch_package\results\baseline\baseline_temporal_results.json'
+results_path = r'.\results\baseline\baseline_temporal_results.json'
 import os
 os.makedirs(os.path.dirname(results_path), exist_ok=True)
 with open(results_path, 'w') as f:

@@ -1,7 +1,7 @@
 """Inspect EDT JSON structure - parse first complete record."""
 import json
 
-with open(r'C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package\data\external\evaluate_news.json', 'rb') as f:
+with open(r'.\data\external\evaluate_news.json', 'rb') as f:
     chunk = f.read(50000)
 s = chunk.decode('utf-8', errors='replace').lstrip()[1:]
 depth = 0

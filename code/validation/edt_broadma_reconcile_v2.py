@@ -22,7 +22,7 @@ from sklearn.metrics import matthews_corrcoef, balanced_accuracy_score
 
 warnings.filterwarnings("ignore")
 
-ROOT = Path(r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package")
+ROOT = Path(r".")
 EDT = ROOT / "data" / "external" / "edt_evaluate_slim.parquet"
 OUT = ROOT / "results" / "validation" / "edt_broadma_reconcile.json"
 SEED = 42

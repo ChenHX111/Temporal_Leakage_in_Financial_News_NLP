@@ -38,10 +38,10 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import matthews_corrcoef, balanced_accuracy_score
 
 # Re-import the v2 classifier (DRY: would normally import from a module)
-sys.path.insert(0, r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package\code\validation")
+sys.path.insert(0, r".\code\validation")
 from ner_role_attribution_v2 import classify_role_v2, ACQ_VERBS, SELL_VERBS, DEAL_NOUNS
 
-BASE = r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package"
+BASE = r"."
 DATA = os.path.join(BASE, "data", "classifier_training_v2.parquet")
 OUT = os.path.join(BASE, "results", "validation", "role_attribution_paper_protocol.json")
 

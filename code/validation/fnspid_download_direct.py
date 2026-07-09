@@ -15,7 +15,7 @@ import pandas as pd
 from pathlib import Path
 from huggingface_hub import hf_hub_download
 
-BASE = Path(r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package\data\external")
+BASE = Path(r".\data\external")
 BASE.mkdir(parents=True, exist_ok=True)
 
 MA_REGEX = re.compile(

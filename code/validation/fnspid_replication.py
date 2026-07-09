@@ -38,7 +38,7 @@ import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
 
-BASE = r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package"
+BASE = r"."
 EXTERNAL_DIR = os.path.join(BASE, "data", "external")
 SAMPLE_PARQUET = os.path.join(EXTERNAL_DIR, "fnspid_ma_sample.parquet")
 LABELED_PARQUET = os.path.join(EXTERNAL_DIR, "fnspid_ma_labeled.parquet")

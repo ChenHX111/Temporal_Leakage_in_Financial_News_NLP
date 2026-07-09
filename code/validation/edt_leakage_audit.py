@@ -27,7 +27,7 @@ from sklearn.metrics import matthews_corrcoef, balanced_accuracy_score
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 warnings.filterwarnings("ignore")
 
-BASE = r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package"
+BASE = r"."
 EDT = os.path.join(BASE, "data", "external", "edt_evaluate_slim.parquet")
 OUT = os.path.join(BASE, "results", "validation", "edt_leakage_audit.json")
 

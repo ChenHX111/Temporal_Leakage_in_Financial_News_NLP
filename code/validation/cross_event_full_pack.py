@@ -32,7 +32,7 @@ from sklearn.metrics import (matthews_corrcoef, balanced_accuracy_score,
                               recall_score, f1_score)
 from sklearn.calibration import calibration_curve
 
-BASE = r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package"
+BASE = r"."
 DATA = os.path.join(BASE, "data", "classifier_training_v2.parquet")
 OUTDIR = os.path.join(BASE, "results", "validation")
 os.makedirs(OUTDIR, exist_ok=True)

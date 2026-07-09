@@ -12,7 +12,7 @@ import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import matthews_corrcoef, balanced_accuracy_score
 
-BASE_DIR = r'C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package'
+BASE_DIR = r'.'
 DATA_PATH = os.path.join(BASE_DIR, 'data', 'classifier_training_v2.parquet')
 RESULTS_DIR = os.path.join(BASE_DIR, 'results', 'validation')
 

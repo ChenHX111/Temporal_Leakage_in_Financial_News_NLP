@@ -9,7 +9,7 @@ warnings.filterwarnings('ignore')
 import pandas as pd
 import numpy as np
 
-BASE_DIR = r'C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package'
+BASE_DIR = r'.'
 RESULTS_DIR = os.path.join(BASE_DIR, 'results', 'validation')
 FIGURES_DIR = os.path.join(BASE_DIR, 'results', 'figures')
 os.makedirs(FIGURES_DIR, exist_ok=True)

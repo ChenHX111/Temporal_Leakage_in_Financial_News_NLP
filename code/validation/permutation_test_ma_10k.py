@@ -20,7 +20,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import matthews_corrcoef
 from joblib import Parallel, delayed
 
-BASE = r'C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package'
+BASE = r'.'
 DATA = os.path.join(BASE, 'data', 'classifier_training_v2.parquet')
 OUT  = os.path.join(BASE, 'results', 'validation', 'permutation_test_ma_10k.json')
 

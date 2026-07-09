@@ -31,7 +31,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.metrics import matthews_corrcoef, balanced_accuracy_score
 
-BASE = r"C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package"
+BASE = r"."
 DATA = os.path.join(BASE, "data", "classifier_training_v2.parquet")
 FINBERT_CACHE = os.path.join(BASE, "data", "finbert_cls_cache.npz")
 MINILM_CACHE = os.path.join(BASE, "data", "minilm_emb_cache.npz")

@@ -15,7 +15,7 @@ from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.model_selection import StratifiedShuffleSplit
 from sklearn.metrics import matthews_corrcoef, balanced_accuracy_score, accuracy_score, roc_auc_score
 
-BASE = r'C:\Users\a-chenhaoxue\Documents\Fin_NLP\autoresearch_package'
+BASE = r'.'
 DATA = os.path.join(BASE, 'data', 'classifier_training_v2.parquet')
 OUT  = os.path.join(BASE, 'results', 'validation', 'leakage_audit_fast.json')
 
