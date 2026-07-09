@@ -3,11 +3,11 @@
 This repository is the reproducibility artifact for the paper *"Temporal Leakage in Financial News NLP: A
 Multi-Architecture Audit with a Regime-Specific M&A Signal"* (ACL-ARR / EMNLP 2026, submission 16286).
 
-> **Status:** PRIVATE preview for the author team (corresponding-author review). The dataset provider has approved a
-> public release; the final public host (GitHub / HuggingFace Datasets / cloud) is being decided by size and fit —
-> **HuggingFace Datasets is the recommended host** (built-in viewer, streaming loader, DOI, standard dataset card).
-> For the double-blind rebuttal, link an **anonymized** mirror (e.g. anonymous.4open.science or an anonymized HF repo),
-> not this named repo.
+> **Status:** Anonymized reproducibility artifact accompanying submission 16286 (double-blind review). The dataset
+> provider has approved public release; the final public host (**HuggingFace Datasets** recommended — built-in viewer,
+> streaming loader, DOI, standard dataset card) will be fixed for the camera-ready. This mirror contains the full
+> labelled corpus, reproduction code, exact split rules, prompts, and the aggregate-verification layer, and reproduces
+> the headline (MCC 0.138 train→val→test; 0.068 train+val refit) directly.
 
 ## What's here
 ```
