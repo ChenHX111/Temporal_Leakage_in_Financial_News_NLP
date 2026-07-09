@@ -9,7 +9,7 @@ All scripts are CPU-only unless noted; the full audit is minutes. Point scripts 
 |---|---|---|
 | M&A locked-test specialist + backtest (paper HP) | `validation/cost_aware_backtest_paperHP.py` | train-only locked-test **MCC = 0.138**; train+val **0.068**; all-trade Sharpe@10bps ≈ −0.60; top-quartile Sharpe@10bps ≈ +2.62 (ex-post upper bound) |
 | 10k-permutation test (M&A) | `validation/permutation_test_ma_10k.py` | z ≈ 3.8, p_two < 1e-3 |
-| Multi-architecture leakage audit | `validation/leakage_audit_definitive.py`, `leakage_audit_full_features.py`, `leakage_audit_multiseed.py` | random/temporal ratio 1.1×–6.5×; ΔMCC up to +0.125 |
+| Multi-architecture leakage audit | `validation/leakage_audit_definitive.py`, `leakage_audit_full_features.py`, `leakage_audit_multiseed.py` | random/temporal ratio 1.1×–6.5×; ΔMCC up to +0.145 |
 | Cross-event replication (M&A vs CLN/LGL/ERN) | `validation/cross_event_audit.py`, `cross_event_full_pack.py` | 2×2 taxonomy; M&A unique signal cell |
 | Cross-corpus: EDT def-matched | `validation/edt_broadma_reconcile.py`, `edt_robustness.py` (uses `public_corpora/edt_evaluate_slim.parquet`) | EDT M&A MCC ≈ 0.097 |
 | Cross-corpus: FNSPID null | `validation/fnspid_replication.py` (uses `public_corpora/fnspid_ma_filtered_fromstream.parquet`) | within-FNSPID MCC ≈ −0.011 (null, n≈4,235) |

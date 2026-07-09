@@ -23,7 +23,7 @@ DATASHEET.md    REPRODUCE.md    HF_DATASET_CARD.md    DATA_DICTIONARY.md
 ```
 
 ## Headline numbers you can reproduce (see REPRODUCE.md for exact commands + expected values)
-- Multi-architecture leakage audit: random-split MCC inflates 1.1×–6.5× over chronological (ΔMCC up to +0.125).
+- Multi-architecture leakage audit: random-split MCC inflates 1.1×–6.5× over chronological (ΔMCC up to +0.145).
 - M&A locked-test specialist (TF-IDF+LR, paper HP): **MCC = 0.138** (train→val→test), **0.068** (train+val refit),
   10k-permutation p<1e-3, weekly-bootstrap CI [+0.066, +0.205].
 - Definition-matched EDT reproduction (public); FNSPID 2009–2020 US M&A **null** (public) → regime-scoping.
