@@ -9,7 +9,9 @@ pip install timesfm chronos-forecasting   # GPU recommended
 python run_timesfm_probe.py               # ~2 min on a single GPU
 ```
 Inputs are bundled here under `data/` (`ma_locked_test_meta.parquet`, `prices_cache.parquet`); the probe writes
-`results/timesfm_probe.json`. To rebuild the price cache from scratch, run `python build_prices.py` first.
+`results/timesfm_probe.json`. To rebuild the price cache from scratch, run `python build_prices.py` first. The Chronos
+loader uses `amazon/chronos-bolt-small` (falling back to `amazon/chronos-t5-small`); TimesFM uses
+`google/timesfm-2.5-200m-pytorch`. The loaded checkpoint is printed to stdout at run time.
 
 ## Expected (see `results/timesfm_probe.json`)
 | Model | MCC | n |

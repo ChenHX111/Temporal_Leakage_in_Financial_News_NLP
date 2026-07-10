@@ -1,9 +1,10 @@
 """
-E3 — Val-calibrated deployable backtest (answers tkJL-C1 / BCS9-C6).
+E3 — Validation-calibrated backtest (answers tkJL-C1 / BCS9-C6).
 
-The paper's top-quartile Sharpe uses an EX-POST test-set confidence quantile -> an upper bound. Here we compute the
-confidence threshold on the VALIDATION set (75th pctile of |p-0.5| on val) and APPLY it to test = a proper, deployable
-(non-upper-bound) rule. Paper states val-vs-test threshold differ <0.01; this converts the caveat into a positive number.
+The paper's top-quartile Sharpe uses an EX-POST test-set confidence quantile. Here we compute the confidence
+threshold on the VALIDATION set (75th pctile of |p-0.5| on val) and APPLY it to test, which removes the ex-post
+*selection* concern (val vs test threshold differ by only ~0.0004). The economic Sharpe (+2.33 @10bps vs all-trade
+-0.60) is still an explicit UPPER BOUND because slippage/market-impact are unmodelled.
 
 Paper-authoritative M&A specialist (cost_aware_backtest_paperHP.py). Out: out/E3_valcal_backtest.json
 """
@@ -63,14 +64,14 @@ def main():
         "thresholds": {"val_calibrated_75pct": thr_val, "test_expost_75pct": thr_test,
                        "abs_diff": round(abs(thr_val - thr_test), 4)},
         "all_trade": grid(np.ones(len(te), bool)),
-        "top25_val_calibrated": grid(conf_te >= thr_val),   # DEPLOYABLE
-        "top25_test_expost": grid(conf_te >= thr_test),     # paper upper bound
+        "top25_val_calibrated": grid(conf_te >= thr_val),   # val-calibrated (removes ex-post selection; still upper bound)
+        "top25_test_expost": grid(conf_te >= thr_test),     # paper ex-post upper bound
         "locked_test_mcc": float(matthews_corrcoef(te["y"].values, yp_te)),
         "n_train": int(len(tr)), "n_val": int(len(val)), "n_test": int(len(te)),
     }
     print("thresholds val=%.4f test=%.4f (|diff|=%.4f)" % (thr_val, thr_test, abs(thr_val - thr_test)), flush=True)
     print("all-trade  Sharpe:", res["all_trade"], flush=True)
-    print("top25 VAL-calibrated (deployable):", res["top25_val_calibrated"], flush=True)
+    print("top25 VAL-calibrated (removes ex-post selection):", res["top25_val_calibrated"], flush=True)
     print("top25 TEST-expost (paper upper bd):", res["top25_test_expost"], flush=True)
     res["elapsed_sec"] = round(time.time() - t0, 1)
     os.makedirs(os.path.dirname(OUT), exist_ok=True)

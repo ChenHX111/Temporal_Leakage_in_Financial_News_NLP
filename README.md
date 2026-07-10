@@ -29,7 +29,7 @@ DATASHEET.md    REPRODUCE.md    HF_DATASET_CARD.md    DATA_DICTIONARY.md
 - M&A locked-test specialist (TF-IDF+LR, paper HP): **MCC = 0.138** (train→val→test), **0.068** (train+val refit),
   10k-permutation p<1e-3, weekly-bootstrap CI [+0.066, +0.205].
 - Definition-matched EDT reproduction (public); FNSPID 2009–2020 US M&A **null** (public) → regime-scoping.
-- Cost-aware backtest = explicit **upper bound** (ex-post quantile + no slippage/impact).
+- Cost-aware backtest = explicit **upper bound**: +2.62 ex-post is reported for continuity; the validation-calibrated top-quartile Sharpe is **+2.33** (all-trade **−0.60**), and remains an upper bound only because slippage/market-impact are unmodelled.
 
 ## Reproducibility aggregates (count/hash-only, no article text)
 `reproducible_aggregates/` holds only counts, SHA-256 hashes, and overlap statistics — enough to externally verify the

@@ -16,7 +16,8 @@ from sklearn.metrics import matthews_corrcoef
 
 BASE = r"."
 DATA = os.path.join(BASE, "data", "classifier_training_v2.parquet")
-OUT = r".\Documents\Fin_NLP\EMNLP_REBUTTAL\artifact_bundle\reproducible_aggregates\dedup_robustness_MA.json"
+OUT = os.path.join(BASE, "reproducible_aggregates", "dedup_robustness_MA.json")
+os.makedirs(os.path.dirname(OUT), exist_ok=True)
 TRAIN_END, VAL_END = pd.Timestamp("2025-04-01"), pd.Timestamp("2025-06-01")
 PAPER_HP = dict(max_features=100, sublinear_tf=False, min_df=2, ngram_range=(1, 1), stop_words="english")
 
