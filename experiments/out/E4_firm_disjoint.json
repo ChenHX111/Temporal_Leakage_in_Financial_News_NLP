@@ -1,0 +1,22 @@
+{
+  "A_temporal_firm_disjoint": {
+    "paper_temporal_mcc": 0.1377825208709459,
+    "n_test_full": 786,
+    "test_ticker_overlap_frac": 0.2989821882951654,
+    "n_test_unseen_firms": 551,
+    "temporal_firm_disjoint_mcc": 0.09801151067741484
+  },
+  "B_grouped_firm_holdout_cv": {
+    "mean_mcc": 0.09431080629132732,
+    "std": 0.06909446983859623,
+    "n_folds": 5,
+    "per_fold": [
+      0.0337,
+      0.1736,
+      0.0918,
+      0.0033,
+      0.1692
+    ]
+  },
+  "elapsed_sec": 0.6
+}

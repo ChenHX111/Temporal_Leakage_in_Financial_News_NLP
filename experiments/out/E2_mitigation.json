@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "n": 49799,
+    "embargo_days": 5,
+    "K": 5
+  },
+  "cells": {
+    "LR": {
+      "chronological_ref_mcc": 0.0517261989620746,
+      "naive_random_cv_mean": 0.11303527004890516,
+      "naive_random_cv_std": 0.0072566842745950015,
+      "blocked_embargo_cv_mean": 0.04917769068002176,
+      "blocked_embargo_cv_std": 0.009669059082545646,
+      "forward_chain_cv_mean": 0.04590547481809417,
+      "forward_chain_cv_std": 0.023309074136919572,
+      "leak_inflation_naive_over_chrono": 0.06130907108683056,
+      "residual_after_blocked": -0.0025485082820528443
+    },
+    "RF": {
+      "chronological_ref_mcc": 0.03916497218974749,
+      "naive_random_cv_mean": 0.09396441410825741,
+      "naive_random_cv_std": 0.008958798817428393,
+      "blocked_embargo_cv_mean": 0.02251201701858848,
+      "blocked_embargo_cv_std": 0.020320317649640353,
+      "forward_chain_cv_mean": 0.026459231021153225,
+      "forward_chain_cv_std": 0.012385460970676951,
+      "leak_inflation_naive_over_chrono": 0.054799441918509925,
+      "residual_after_blocked": -0.016652955171159008
+    }
+  },
+  "ma_locked_invariance": {
+    "paper_mcc": 0.1377825208709459,
+    "embargoed_train_mcc": 0.1377825208709459,
+    "n_train": 731,
+    "n_train_embargoed": 731
+  },
+  "elapsed_sec": 438.0
+}

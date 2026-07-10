@@ -1,0 +1,25 @@
+{
+  "n_articles": 786,
+  "n_used": 693,
+  "context_len": 128,
+  "momentum_last": {
+    "mcc": -0.044258328093514085,
+    "n_scored": 618
+  },
+  "ar_mean_20": {
+    "mcc": -0.06471348015513041,
+    "n_scored": 687
+  },
+  "fm_chronos": {
+    "mcc": -0.028047508895124848,
+    "n_scored": 693
+  },
+  "fm_timesfm25": {
+    "mcc": -0.0538678551715084,
+    "n_scored": 693
+  },
+  "paper_text_specialist_mcc": 0.138,
+  "paper_nontext_baseline_val_mcc": -0.02,
+  "interpretation": "Numeric price-only forecasters (TimesFM / momentum / AR) score near-chance on next-day M&A direction, far below the text specialist (0.138) and consistent with the paper's non-text baseline (-0.020): the signal is in the news TEXT, not in price history. TimesFM is therefore a complementary non-text baseline, not a substitute for fin-NLP.",
+  "elapsed_sec": 126.6
+}

@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "n_ma_total": 2189,
+    "n_ma_neutral": 303
+  },
+  "S_sanity": {
+    "train_only_mcc": 0.1377825208709459,
+    "expect_0.138": true,
+    "train_val_mcc": 0.06831515166852048,
+    "expect_0.068": true,
+    "n_train_only": 731,
+    "n_test": 786
+  },
+  "A_tau0_exante": {
+    "n_train": 828,
+    "n_test": 925,
+    "test_up_rate": 0.5048648648648648,
+    "observed_mcc": 0.07784479855109311,
+    "p_one": 0.0106,
+    "p_two": 0.0191,
+    "z": 2.39323452697111
+  },
+  "B_three_class": {
+    "multiclass_mcc": 0.07503363096764543,
+    "macro_f1": 0.3632920532332385,
+    "n_train": 828,
+    "n_test": 925,
+    "test_dist": {
+      "2": 467,
+      "0": 319,
+      "1": 139
+    }
+  },
+  "C_neutral_band": {
+    "tau_0.3": {
+      "mcc": 0.10607871741470568,
+      "n_train": 585,
+      "n_test": 650
+    },
+    "tau_0.5": {
+      "mcc": 0.09238516336553342,
+      "n_train": 499,
+      "n_test": 530
+    },
+    "tau_1.0": {
+      "mcc": 0.07656202121472158,
+      "n_train": 363,
+      "n_test": 366
+    }
+  },
+  "D_audit_invariance": {
+    "updown_only_paper": {
+      "temporal_mcc": 0.1377825208709459,
+      "random_mcc_mean": 0.14697488481283627,
+      "random_mcc_std": 0.02323562671540738,
+      "delta_mcc": 0.00919236394189038,
+      "n_test": 786
+    },
+    "tau0_all_rows": {
+      "temporal_mcc": 0.07784479855109311,
+      "random_mcc_mean": 0.15017499748765437,
+      "random_mcc_std": 0.02810545057601303,
+      "delta_mcc": 0.07233019893656126,
+      "n_test": 925
+    }
+  },
+  "elapsed_sec": 13.3
+}
