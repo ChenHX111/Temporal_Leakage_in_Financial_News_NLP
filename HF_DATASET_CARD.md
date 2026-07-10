@@ -27,6 +27,10 @@ Companion to the paper *"Temporal Leakage in Financial News NLP: A Multi-Archite
 Signal"* (EMNLP 2026). Code + reproducible aggregates + public cross-corpus (EDT, FNSPID) replications are in the
 artifact repository.
 
+**Provenance & why it is useful.** The underlying news is public, but the corpus's value is its comprehensive historical
+retention: commercial wire feeds typically keep only a few weeks of history per ticker, so a multi-year, multi-exchange
+tagged corpus like this is hard to reconstruct independently. It is released with the data provider's approval.
+
 ## Load
 ```python
 from datasets import load_dataset

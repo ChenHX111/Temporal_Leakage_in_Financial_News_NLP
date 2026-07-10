@@ -24,6 +24,9 @@ Following Gebru et al. (2021), "Datasheets for Datasets." ⟦…⟧ = finalize a
 
 ## Collection
 - **Source.** A commercial news provider's tagged feed (203-type event taxonomy, per-article instrument + timestamps).
+  The underlying news is public; the provider's value is comprehensive **historical retention** — commercial wire feeds
+  typically keep only a few weeks of history per ticker — which makes independent reconstruction difficult and is the
+  main reason releasing this curated corpus is useful.
   Returns/benchmarks computed from market data (close-to-close, or close-to-next-open for after-hours; exchange
   timezone/holiday handling per the paper's App. Reproducibility).
 - **Sampling.** All articles in the provider window meeting the tagging criteria; no subsampling beyond neutral-removal
