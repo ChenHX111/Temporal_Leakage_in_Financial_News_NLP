@@ -1,5 +1,5 @@
 ---
-license: cc-by-4.0
+license: other
 task_categories:
 - text-classification
 language:
@@ -52,6 +52,11 @@ scoped to the 2024–25 European-tilted regime (definition-matched on public EDT
 See `DATA_DICTIONARY.md`. Highlights: `title_en`, `content_en`, `event`, `publisher`, `industry`, `exchange`,
 `yf_ticker`, `published_date`, `price_change_percentage`, `index_price_change_percentage`, `actual_side`,
 `nextday_side`, plus keyword/timing/sentiment/length features.
+
+## License
+Dataset license is **provisional** — to be finalized with the data provider at publication (CC-BY-4.0 intended for the
+derived, de-identified corpus, pending provider confirmation). The underlying article text remains subject to the
+originating publishers' copyright. Public EDT/FNSPID slices retain their original licenses. Code: MIT.
 
 ## Ethics & intended use
 Public-company financial news; no private-individual personal data. Intended for **evaluation-methodology / leakage

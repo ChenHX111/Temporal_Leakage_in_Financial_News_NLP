@@ -31,13 +31,14 @@ DATASHEET.md    REPRODUCE.md    HF_DATASET_CARD.md    DATA_DICTIONARY.md
 - Definition-matched EDT reproduction (public); FNSPID 2009–2020 US M&A **null** (public) → regime-scoping.
 - Cost-aware backtest = explicit **upper bound** (ex-post quantile + no slippage/impact).
 
-## Reproducibility aggregates (releasable even under any residual data restriction)
+## Reproducibility aggregates (count/hash-only, no article text)
 `reproducible_aggregates/` holds only counts, SHA-256 hashes, and overlap statistics — enough to externally verify the
 split design, feature space, near-duplicate handling, and leakage sources **without** any article text:
 `split_summary.json`, `monthly_event_counts.csv`, `tfidf_vocab_hashed_MA.csv`, `dedup_report.json`,
 `dedup_robustness_MA.json`, `dedup_keys_hashed.csv`, `publisher_entity_overlap.json`.
 
 ## License
-Code: MIT (see below). Data: released under the provider-approved terms; final license fixed at publication
-(CC-BY-4.0 intended for the derived, de-identified corpus). Public EDT/FNSPID slices retain their original licenses
+Code: MIT (see below). Data license is **provisional** — to be finalized with the provider at publication (CC-BY-4.0
+intended for the derived, de-identified corpus, pending provider confirmation); the underlying article text remains
+subject to the originating publishers' copyright. Public EDT/FNSPID slices retain their original licenses
 (cite Zhou et al. 2021; Dong et al. 2024).
