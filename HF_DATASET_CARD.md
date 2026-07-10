@@ -54,9 +54,10 @@ See `DATA_DICTIONARY.md`. Highlights: `title_en`, `content_en`, `event`, `publis
 `nextday_side`, plus keyword/timing/sentiment/length features.
 
 ## License
-Dataset license is **provisional** — to be finalized with the data provider at publication (CC-BY-4.0 intended for the
-derived, de-identified corpus, pending provider confirmation). The underlying article text remains subject to the
-originating publishers' copyright. Public EDT/FNSPID slices retain their original licenses. Code: MIT.
+Dataset license is **provisional** and will be finalized with the data provider at publication. Article text is
+redistributed only under the provider-approved release terms; the originating publishers retain copyright, and we make no
+CC-BY (or other open-license) claim over third-party article text. Public EDT/FNSPID slices retain their original
+licenses. Code: MIT.
 
 ## Ethics & intended use
 Public-company financial news; no private-individual personal data. Intended for **evaluation-methodology / leakage

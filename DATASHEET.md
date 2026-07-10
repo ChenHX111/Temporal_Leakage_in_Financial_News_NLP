@@ -48,7 +48,7 @@ Following Gebru et al. (2021), "Datasheets for Datasets." ⟦…⟧ = finalize a
 ## Distribution & maintenance
 - **Release.** Provider-approved public release; recommended host **HuggingFace Datasets** (viewer + loader + DOI).
   Size: 23.6 MB (parquet). Public EDT/FNSPID slices carry their original licenses.
-- **License.** Provisional — to be finalized with the provider at publication (CC-BY-4.0 intended for the derived,
-  de-identified corpus, pending provider confirmation); the underlying article text remains subject to the originating
-  publishers' copyright. ⟦confirm final terms at publication⟧.
+- **License.** Provisional — to be finalized with the provider at publication. Article text is redistributed only under
+  the provider-approved release terms; the originating publishers retain copyright, and we make no CC-BY (or other
+  open-license) claim over third-party article text. ⟦confirm final terms at publication⟧.
 - **Maintenance / contact / versioning.** ⟦…⟧.
