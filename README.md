@@ -21,6 +21,10 @@ code/validation/                         # the paper's headline reproductions (a
                                          #   cross-event, cross-corpus, backtest, role attribution)
 code/baseline/                           # baseline classifiers (temporal reproduction)
 reproducible_aggregates/                 # count/hash/overlap-only aggregates (verifiable without any text)
+experiments/                             # rebuttal robustness additions: E1 neutrals/ex-ante, E2 leakage-mitigation CV,
+                                         #   E3 val-calibrated backtest, E4 firm-disjoint; timesfm/ = E5 TimesFM/Chronos
+                                         #   price-only probe, self-contained (probe + bundled price cache + result JSON)
+CHECKLIST.md                             # reusable temporal-leakage audit protocol (each step -> a runnable script)
 DATASHEET.md    REPRODUCE.md    HF_DATASET_CARD.md    DATA_DICTIONARY.md
 ```
 
